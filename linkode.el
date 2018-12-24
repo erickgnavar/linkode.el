@@ -55,7 +55,7 @@
          (status-code (nth 1 splitted)))
     (if (string-equal status-code "201")
         (progn
-          (forward-line 5)
+          (search-forward "Location")
           (let* ((location-header (buffer-substring-no-properties (line-beginning-position) (line-end-position)))
                  (splitted (split-string location-header " "))
                  (location-url (nth 1 splitted)))
