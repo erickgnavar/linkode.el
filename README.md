@@ -4,6 +4,8 @@ Send buffer or region code to linkode.org to generate an image.
 
 ## Installation
 
+### Cloning the repo
+
 Clone this repo somewhere
 
 Add this to your config
@@ -12,6 +14,14 @@ Add this to your config
 (add-to-list 'load-path "path where the repo was cloned")
 
 (require 'linkode)
+```
+
+### Using use-package and quelpa
+
+```elisp
+(use-package linkode
+  :ensure t
+  :quelpa (linkode :fetcher github :repo "erickgnavar/linkode.el"))
 ```
 
 ## Usage
