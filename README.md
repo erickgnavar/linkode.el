@@ -24,6 +24,17 @@ Add this to your config
   :quelpa (linkode :fetcher github :repo "erickgnavar/linkode.el"))
 ```
 
+### Using straight.el
+
+
+```elisp
+(use-package linkode
+  :straight (linkode
+             :type git
+             :host github
+             :repo "erickgnavar/linkode.el"))
+```
+
 ## Usage
 
 `M-x linkode-region` to use the selected region
