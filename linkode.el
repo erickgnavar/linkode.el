@@ -1,4 +1,4 @@
-;;; linkode.el --- Send buffer or region code to linkode.org to generate a snippet
+;;; linkode.el --- Send buffer or region code to linkode.org to generate a snippet -*- lexical-binding: t; -*-
 
 ;; Copyright © 2018 Erick Navarro
 ;; Author: Erick Navarro <erick@navarro.io>
@@ -78,12 +78,12 @@
         (linkode--send-snippet (cdr file-type) code)
       (linkode--send-snippet "auto" code))))
 
-(defun linkode-send-buffer ()
+(defun linkode-buffer ()
   "Send buffer content to linkode."
   (interactive)
   (linkode--send-code (buffer-substring-no-properties (point-min) (point-max))))
 
-(defun linkode-send-region ()
+(defun linkode-region ()
   "Send region content to linkode."
   (interactive)
   (if (region-active-p)

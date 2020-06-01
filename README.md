@@ -26,8 +26,8 @@ Add this to your config
 
 ## Usage
 
-`M-x linkode-send-region` to use the selected region
+`M-x linkode-region` to use the selected region
 
-`M-x linkode-send-buffer` to use the buffer content
+`M-x linkode-buffer` to use the buffer content
 
 The code will be send to [linkode](http://linkode.org) and the resulting link will be copied to the clipboard
