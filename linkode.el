@@ -1,4 +1,4 @@
-;;; linkode.el --- Send buffer or region code to linkode.org to generate a snippet -*- lexical-binding: t; -*-
+;;; linkode.el --- Generate a linkode snippet with region/buffer content
 
 ;; Copyright © 2018 Erick Navarro
 ;; Author: Erick Navarro <erick@navarro.io>
