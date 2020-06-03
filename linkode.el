@@ -78,11 +78,13 @@
         (linkode--send-snippet (cdr file-type) code)
       (linkode--send-snippet "auto" code))))
 
+;;;###autoload
 (defun linkode-buffer ()
   "Send buffer content to linkode."
   (interactive)
   (linkode--send-code (buffer-substring-no-properties (point-min) (point-max))))
 
+;;;###autoload
 (defun linkode-region ()
   "Send region content to linkode."
   (interactive)
