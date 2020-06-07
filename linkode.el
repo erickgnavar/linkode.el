@@ -60,7 +60,7 @@
                  (splitted (split-string location-header " "))
                  (location-url (nth 1 splitted)))
             (kill-new location-url)
-            (message (format "%s copied to clipboard" location-url))))
+            (message "%s copied to clipboard" location-url)))
       (message "An error happened"))))
 
 (defun linkode--send-snippet (type content)
