@@ -16,23 +16,11 @@ Add this to your config
 (require 'linkode)
 ```
 
-### Using use-package and quelpa
+### Using use-package
 
 ```elisp
 (use-package linkode
-  :ensure t
-  :quelpa (linkode :fetcher github :repo "erickgnavar/linkode.el"))
-```
-
-### Using straight.el
-
-
-```elisp
-(use-package linkode
-  :straight (linkode
-             :type git
-             :host github
-             :repo "erickgnavar/linkode.el"))
+  :ensure t)
 ```
 
 ## Usage
