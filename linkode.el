@@ -13,6 +13,8 @@
 ;; the following functions are avaialble for use:
 ;; M-x linkode-region to use the selected region
 ;; M-x linkode-buffer to use the buffer content
+;; The code will be send to linkode.org and the resulting link will be
+;; copied to the clipboard
 
 ;;; Code:
 
@@ -53,7 +55,6 @@
                                      (xml-mode . "xml")
                                      (yaml-mode . "yaml")))
 
-;TODO: Fix this or use a library instead
 (defun linkode--process-response (status)
   "Given a STATUS extract location header value from response buffer."
   (let* ((status-line (buffer-substring-no-properties (line-beginning-position) (line-end-position)))
