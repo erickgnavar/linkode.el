@@ -4,6 +4,7 @@
 ;; Author: Erick Navarro <erick@navarro.io>
 ;; URL: https://github.com/erickgnavar/linkode.el
 ;; Version: 0.1.0
+;; SPDX-License-Identifier: GNU General Public License v3.0 or later
 
 ;;; Commentary:
 ;; Just send the selected code to linkode website
