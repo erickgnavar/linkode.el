@@ -10,7 +10,7 @@
 
 ;;; Code:
 
-(defconst linkode--url "http://linkode.org/api/1/linkodes/")
+(defconst linkode--url "https://linkode.org/api/1/linkodes/")
 
 (defconst linkode--supported-modes '((fundamental-mode . "auto")
                                      (auto-mode . "plain text")
