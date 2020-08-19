@@ -1,5 +1,7 @@
 # linkode.el
 
+[![MELPA](https://melpa.org/packages/linkode-badge.svg)](https://melpa.org/#/linkode)
+
 Send buffer or region code to linkode.org to generate an image.
 
 ## Installation
