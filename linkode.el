@@ -66,8 +66,11 @@
           (let* ((location-header (buffer-substring-no-properties (line-beginning-position) (line-end-position)))
                  (splitted (split-string location-header " "))
                  (location-url (nth 1 splitted)))
-            (kill-new location-url)
-            (message "%s copied to clipboard" location-url)))
+            ;; linkode.org now requires  to have a # in the URL,
+            ;; otherwise it will raise a 404
+            (let ((fixed-url (replace-regexp-in-string "/\\([^/]*\\)$" "/#\\1" location-url)))
+              (kill-new fixed-url)
+              (message "%s copied to clipboard" fixed-url))))
       (message "An error happened"))))
 
 (defun linkode--send-snippet (type content)
